@@ -1,0 +1,38 @@
+.wrap {
+  width: 100%;
+}
+
+.list {
+  background-color: #eef0f2;
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top {
+  background-color: #0e73f6;
+  padding: 12px;
+  border-radius: 12px 12px 0 0;
+
+  &.in-progress {
+    background-color: #f8c51b;
+  }
+
+  &.ready {
+    background-color: #22c348;
+  }
+
+  &.in-review {
+    background-color: #1ac19d;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

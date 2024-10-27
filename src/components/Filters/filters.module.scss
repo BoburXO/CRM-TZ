@@ -1,0 +1,37 @@
+.filter_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .filter_left {
+    input {
+      width: 100%;
+      max-width: 240px;
+      padding: 10px 20px;
+      border-radius: 8px;
+
+      padding-left: 40px;
+      background-image: url(/public/search.svg);
+      background-repeat: no-repeat;
+      background-size: 22px;
+      background-position: 10px;
+      font-weight: 400;
+      font-size: 14px;
+      outline: none;
+      border: 1px solid #e5e9eb;
+      color: #1a2024;
+      &::placeholder{
+        color: #9AA6AC;
+      }
+      &:focus{
+        outline: 2px solid #0E73F6;
+      }
+    }
+  }
+  .filter_right {
+    display: flex;
+    gap: 30px;
+    .time_select {
+      width: 92px;
+    }
+  }
+}
